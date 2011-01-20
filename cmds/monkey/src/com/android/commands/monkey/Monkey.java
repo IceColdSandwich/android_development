@@ -349,7 +349,7 @@ public class Monkey {
                     mAbort = true;
                 }
             }
-            return (mKillProcessAfterError) ? -1 : 1;
+            return (mKillProcessAfterError) ? -1 : 0;
         }
     }
 
