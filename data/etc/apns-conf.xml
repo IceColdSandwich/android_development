@@ -81,6 +81,8 @@
   <apn carrier="MMS Bouygues" mcc="208" mnc="21" apn="mmsbouygtel.com" mmsc="http://mms.bouyguestelecom.fr/mms/wapenc" mmsproxy="62.201.129.226" mmsport="8080" type="mms" />
   <apn carrier="BouyguesGPRS ISP" mcc="208" mnc="88" apn="ebouygtel.com" type="default,supl" />
   <apn carrier="MMS Bouygues" mcc="208" mnc="88" apn="mmsbouygtel.com" mmsc="http://mms.bouyguestelecom.fr/mms/wapenc" mmsproxy="62.201.129.226" mmsport="8080" type="mms" />
+  <apn carrier="Free" mcc="208" mnc="15" apn="free" type="default,supl" />
+  <apn carrier="Free MMS" mcc="208" mnc="15" apn="mmsfree" mmsc="http://mms.free.fr" type="mms" />
   <apn carrier="Vodafone ES-Internet" mcc="214" mnc="01" apn="ac.vodafone.es" user="vodafone" password="vodafone" type="default,supl" />
   <apn carrier="Vodafone" mcc="214" mnc="01" apn="airtelwap.es" user="wap@wap" password="wap125" type="default,supl" />
   <apn carrier="Vodafone ES" mcc="214" mnc="01" apn="airtelwap.es" user="wap@wap" password="wap125" type="supl" />
