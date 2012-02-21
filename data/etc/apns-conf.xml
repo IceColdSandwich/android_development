@@ -384,7 +384,7 @@
   <apn carrier="Djuice EDGE" mcc="255" mnc="03" apn="www.djuice.com.ua" type="default,supl" />
   <apn carrier="Kyivstar EDGE" mcc="255" mnc="03" apn="www.kyivstar.net" type="default,supl" />
   <apn carrier="life" mcc="255" mnc="06" apn="internet" type="default,supl" />
-  <apn carrier="life MMS" mcc="255" mnc="06" apn="mms" mmsc="http://mms.life.com.ua/cmms/post" mmsproxy="212.58.162.230" mmsport="8080" type="mms" />
+  <apn carrier="life MMS" mcc="255" mnc="06" apn="mms" mmsc="http://mms.life.com.ua/cmmsc/post" mmsproxy="212.58.162.230" mmsport="8080" type="mms" />
   <apn carrier="Utel" mcc="255" mnc="07" apn="3g.utel.ua" mmsc="http://10.212.1.4/mms/wapenc" mmsproxy="10.212.3.148" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Velcom MMS" mcc="257" mnc="01" apn="mms.velcom.by" user="mms" password="mms" server="mms.velcom.by" mmsc="http://mms.velcom.by/servlets/mms" mmsproxy="10.200.15.15" mmsport="8080" type="mms" />
   <apn carrier="Velcom BY // Web Plus" mcc="257" mnc="01" apn="plus.velcom.by" user="plus" password="plus" type="default,supl" />
