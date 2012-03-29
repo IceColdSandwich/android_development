@@ -109,7 +109,7 @@ bool createOpenGLSubwindow(FBNativeWindowType window,
 bool destroyOpenGLSubwindow();
 
 //
-// setOpenGLDisplatRotation -
+// setOpenGLDisplayRotation -
 //    set the framebuffer display image rotation in units
 //    of degrees around the z axis
 //
