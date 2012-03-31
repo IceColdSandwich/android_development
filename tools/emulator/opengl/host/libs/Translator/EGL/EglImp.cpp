@@ -183,16 +183,8 @@ static __translator_getGLESIfaceFunc loadIfaces(const char* libName){
     return func;
 }
 
-#ifdef _WIN32
-#define LIB_GLES_CM_NAME "libGLES_CM_translator"
-#define LIB_GLES_V2_NAME "libGLES_V2_translator"
-#elif __linux__
-#define LIB_GLES_CM_NAME "libGLES_CM_translator.so"
-#define LIB_GLES_V2_NAME "libGLES_V2_translator.so"
-#elif __APPLE__
-#define LIB_GLES_CM_NAME "libGLES_CM_translator.dylib"
-#define LIB_GLES_V2_NAME "libGLES_V2_translator.dylib"
-#endif
+#define LIB_GLES_CM_NAME EMUGL_LIBNAME("GLES_CM_translator")
+#define LIB_GLES_V2_NAME EMUGL_LIBNAME("GLES_V2_translator")
 
 EGLAPI EGLBoolean EGLAPIENTRY eglInitialize(EGLDisplay display, EGLint *major, EGLint *minor) {
 
@@ -1041,13 +1033,13 @@ EGLImageKHR eglCreateImageKHR(EGLDisplay display, EGLContext context, EGLenum ta
     ThreadInfo* thread  = getThreadInfo();
     ShareGroupPtr sg = thread->shareGroup;
     if (sg.Ptr() != NULL) {
-        unsigned int globalTexName = sg->getGlobalName(TEXTURE, (unsigned int)buffer);
+        unsigned int globalTexName = sg->getGlobalName(TEXTURE, (uintptr_t)buffer);
         if (!globalTexName) return EGL_NO_IMAGE_KHR;
 
         ImagePtr img( new EglImage() );
         if (img.Ptr() != NULL) {
 
-            ObjectDataPtr objData = sg->getObjectData(TEXTURE, (unsigned int)buffer);
+            ObjectDataPtr objData = sg->getObjectData(TEXTURE, (uintptr_t)buffer);
             if (!objData.Ptr()) return EGL_NO_IMAGE_KHR;
 
             TextureData *texData = (TextureData *)objData.Ptr();

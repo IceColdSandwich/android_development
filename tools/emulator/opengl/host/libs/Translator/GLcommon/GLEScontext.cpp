@@ -7,6 +7,7 @@
 #include <GLcommon/TextureUtils.h>
 #include <GLcommon/FramebufferData.h>
 #include <strings.h>
+#include <assert.h>
 
 //decleration
 static void convertFixedDirectLoop(const char* dataIn,unsigned int strideIn,void* dataOut,unsigned int nBytes,unsigned int strideOut,int attribSize);
@@ -70,6 +71,7 @@ void GLESConversionArrays::operator++(){
 GLDispatch     GLEScontext::s_glDispatch;
 android::Mutex GLEScontext::s_lock;
 std::string*   GLEScontext::s_glExtensions= NULL;
+std::string    GLEScontext::s_glRenderer;
 GLSupport      GLEScontext::s_glSupport;
 
 Version::Version():m_major(0),
@@ -172,7 +174,9 @@ GLEScontext::~GLEScontext() {
 const GLvoid* GLEScontext::setPointer(GLenum arrType,GLint size,GLenum type,GLsizei stride,const GLvoid* data,bool normalize) {
     GLuint bufferName = m_arrayBuffer;
     if(bufferName) {
-        unsigned int offset = reinterpret_cast<unsigned int>(data);
+        uintptr_t offsetptr = (uintptr_t)data;
+        unsigned int offset = offsetptr;
+        assert(sizeof(offset) == sizeof(offsetptr) || offset == offsetptr);
         GLESbuffer* vbo = static_cast<GLESbuffer*>(m_shareGroup->getObjectData(VERTEXBUFFER,bufferName).Ptr());
         m_map[arrType]->setBuffer(size,type,stride,vbo,bufferName,offset,normalize);
         return  static_cast<const unsigned char*>(vbo->getData()) +  offset;
@@ -464,6 +468,10 @@ const char * GLEScontext::getExtensionString() {
         ret="";
     s_lock.unlock();
     return ret;
+}
+
+const char * GLEScontext::getRendererString() const {
+    return s_glRenderer.c_str();
 }
 
 void GLEScontext::getGlobalLock() {
