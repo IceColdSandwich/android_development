@@ -1008,6 +1008,7 @@
   <apn carrier="Nawras MMS" mcc="422" mnc="03" apn="mms.nawras.com.om" user="test" password="test" proxy="10.128.240.19" port="8080" mmsc="http://10.128.240.16/servlets/mms" mmsproxy="10.128.240.19" mmsport="8080" type="mms" />
   <apn carrier="Etisalat UAE" mcc="424" mnc="02" apn="etisalat.ae" type="default,supl" />
   <apn carrier="Etisalat UAE MMS" mcc="424" mnc="02" apn="mms" user="mms" password="mms" mmsc="http://mms/servlets/mms" mmsproxy="10.12.0.30" mmsport="9201" type="mms" />
+  <apn carrier="Etisalat MMS" mcc="602" mnc="03" apn="Etisalat" mmsc="http://10.71.131.7:38090" mmsproxy="10.71.130.29" mmsport="8080" type="mms" />
   <apn carrier="du" mcc="424" mnc="03" apn="du" mmsc="http://mms.du.ae" mmsproxy="10.19.18.4" mmsport="9201" type="default,supl,mms" />
   <apn carrier="Orange IL" mcc="425" mnc="01" apn="internet" user="orange" password="orange" type="default,supl" />
   <apn carrier="Orange IL MMS" mcc="425" mnc="01" apn="wap.orange.co.il" mmsc="http://192.168.220.15/servlets/mms" mmsport="8080" type="mms" />
@@ -1385,4 +1386,6 @@
   <apn carrier="Movistar UY" mcc="748" mnc="07" apn="apnumt.movistar.com.uy" user="movistar" password="movistar" type="default,supl" />
   <apn carrier="Claro UY" mcc="748" mnc="10" apn="gprs.claro.com.uy" user="ctigpr" password="ctigpr999" type="default,supl" />
   <apn carrier="Claro UY MMS" mcc="748" mnc="10" apn="mms.ctimovil.com.uy" user="ctimms" password="ctimms999" mmsc="http://mms.ctimovil.com.uy" mmsproxy="170.051.255.240" mmsport="9201" type="mms" />
+  <apn carrier="VF internet EG" mcc="602" mnc="02" apn="internet.vodafone.net" user="internet" password="internet" type="default,supl" />
+  <apn carrier="VF MMS EG" mcc="602" mnc="02" apn="mms.vodafone.com.eg" user="mms" password="mms" mmsc="http://mms.vodafone.com.eg/servlets/mms" mmsproxy="163.121.178.2" mmsport="8080" type="mms" />
 </apns>
