@@ -72,8 +72,8 @@
   <apn carrier="ACCESS DATA" mcc="208" mnc="13" apn="websfr" type="default,supl" />
   <apn carrier="NRJ Mobile FR" mcc="208" mnc="10" apn="fnetnrj" type="default,supl" />
   <apn carrier="NRJ Mobile FR MMS" mcc="208" mnc="10" apn="mmsnrj" mmsproxy="010.143.156.005" mmsport="8080" mmsc="http://mmsnrj" type="mms" />
-  <apn name="Free" numeric="20815" mcc="208" mnc="15" apn="free" user="" server="" password="" proxy="null" port="null" mmsproxy="null" mmsport="null" mmsprotocol="null" mmsc="http://mms.free.fr" type="default,supl,mms" />
-  <apn name="Free MMS" numeric="20815" mcc="208" mnc="15" apn="mmsfree" user="" server="" password="" proxy="null" port="null" mmsproxy="null" mmsport="null" mmsprotocol="null" mmsc="http://mms.free.fr" type="mms" />
+  <apn carrier="Free" numeric="20815" mcc="208" mnc="15" apn="free" user="" server="" password="" proxy="" port="" mmsproxy="" mmsport="" mmsprotocol="" mmsc="http://mms.free.fr" type="default,supl,mms" />
+  <apn carrier="Free MMS" numeric="20815" mcc="208" mnc="15" apn="mmsfree" user="" server="" password="" proxy="" port="" mmsproxy="" mmsport="" mmsprotocol="" mmsc="http://mms.free.fr" type="mms" />
   <apn carrier="Bouygues Pro" mcc="208" mnc="20" apn="a2bouygtel.com" type="default,supl,mms" />
   <apn carrier="Bouygues WEB" mcc="208" mnc="20" apn="mmsbouygtel.com" server="*" type="default,supl" />
   <apn carrier="Bouygues Telecom" mcc="208" mnc="20" apn="mmsbouygtel.com" mmsc="http://mms.bouyguestelecom.fr/mms/wapenc" mmsproxy="62.201.129.226" mmsport="8080" type="default,supl,mms" />
@@ -1323,31 +1323,31 @@
   <apn carrier="Personal" mcc="722" mnc="34" apn="gprs.personal.com" user="gprs" type="default,supl" />
   <apn carrier="Personal MMS" mcc="722" mnc="34" apn="mms" user="mms" password="mms" mmsc="http://mms.personal.com/" mmsproxy="172.025.007.031" mmsport="9201" type="mms" />
   <apn carrier="TIM BR MMS" mcc="724" mnc="02" apn="mms.tim.br" user="tim" password="tim" mmsc="http://mms.tim.br" mmsproxy="200.179.66.242" mmsport="8080" type="mms" />
-  <apn carrier="TIM BR CONNECT FAST" mcc="724" mnc="02" apn="tim.br" user="tim" password="tim" mmsc="null" type="default,supl" />
+  <apn carrier="TIM BR CONNECT FAST" mcc="724" mnc="02" apn="tim.br" user="tim" password="tim" mmsc="" type="default,supl" />
   <apn carrier="TIM BR MMS" mcc="724" mnc="03" apn="mms.tim.br" user="tim" password="tim" mmsc="http://mms.tim.br" mmsproxy="200.179.66.242" mmsport="8080" type="mms" />
-  <apn carrier="TIM BR CONNECT FAST" mcc="724" mnc="03" apn="tim.br" user="tim" password="tim" mmsc="null" type="default,supl" />
+  <apn carrier="TIM BR CONNECT FAST" mcc="724" mnc="03" apn="tim.br" user="tim" password="tim" mmsc="" type="default,supl" />
   <apn carrier="TIM BR MMS" mcc="724" mnc="04" apn="mms.tim.br" user="tim" password="tim" mmsc="http://mms.tim.br" mmsproxy="200.179.66.242" mmsport="8080" type="mms" />
-  <apn carrier="TIM BR CONNECT FAST" mcc="724" mnc="04" apn="tim.br" user="tim" password="tim" mmsc="null" type="default,supl" />
+  <apn carrier="TIM BR CONNECT FAST" mcc="724" mnc="04" apn="tim.br" user="tim" password="tim" mmsc="" type="default,supl" />
   <apn carrier="Claro BR" mcc="724" mnc="05" apn="claro.com.br" user="claro" password="claro" type="default,supl" />
   <apn carrier="Claro BR MMS" mcc="724" mnc="05" apn="mms.claro.com.br" user="claro" password="claro" mmsc="http://mms.claro.com.br" mmsproxy="200.169.126.10" mmsport="8799" type="mms" />
   <apn carrier="Portal Claro" mcc="724" mnc="05" apn="wap.claro.com.br" user="claro" password="claro" proxy="200.169.126.11" port="8799" type="default,supl" />
   <apn carrier="VIVO MMS" mcc="724" mnc="06" apn="mms.vivo.com.br" user="vivo" password="vivo" mmsc="http://termnat.vivomms.com.br:8088/mms" mmsproxy="200.142.130.104" mmsport="80" type="mms" />
-  <apn carrier="VIVO ZAP" mcc="724" mnc="06" apn="zap.vivo.com.br" user="vivo" password="vivo" mmsc="null" type="default,supl" />
+  <apn carrier="VIVO ZAP" mcc="724" mnc="06" apn="zap.vivo.com.br" user="vivo" password="vivo" mmsc="" type="default,supl" />
   <apn carrier="SCTL MMS" mcc="724" mnc="07" apn="mms.sercomtel.com.br" user="sercomtel" password="sercomtel" mmsc="http://mms.claro.com.br" mmsproxy="200.169.126.10" mmsport="8799" type="mms" />
-  <apn carrier="SCTL GPRS" mcc="724" mnc="07" apn="sercomtel.com.br" user="sercomtel" password="sercomtel" mmsc="null" type="default,supl" />
+  <apn carrier="SCTL GPRS" mcc="724" mnc="07" apn="sercomtel.com.br" user="sercomtel" password="sercomtel" mmsc="" type="default,supl" />
   <apn carrier="VIVO MMS" mcc="724" mnc="10" apn="mms.vivo.com.br" user="vivo" password="vivo" mmsc="http://termnat.vivomms.com.br:8088/mms" mmsproxy="200.142.130.104" mmsport="80" type="mms" />
-  <apn carrier="VIVO ZAP" mcc="724" mnc="10" apn="zap.vivo.com.br" user="vivo" password="vivo" mmsc="null" type="default,supl" />
+  <apn carrier="VIVO ZAP" mcc="724" mnc="10" apn="zap.vivo.com.br" user="vivo" password="vivo" mmsc="" type="default,supl" />
   <apn carrier="VIVO MMS" mcc="724" mnc="11" apn="mms.vivo.com.br" user="vivo" password="vivo" mmsc="http://termnat.vivomms.com.br:8088/mms" mmsproxy="200.142.130.104" mmsport="80" type="mms" />
-  <apn carrier="VIVO ZAP" mcc="724" mnc="11" apn="zap.vivo.com.br" user="vivo" password="vivo" mmsc="null" type="default,supl" />
-  <apn carrier="BrT Internet" mcc="724" mnc="16" apn="brt.br" user="brt" password="brt" mmsc="null" type="default,supl" />
+  <apn carrier="VIVO ZAP" mcc="724" mnc="11" apn="zap.vivo.com.br" user="vivo" password="vivo" mmsc="" type="default,supl" />
+  <apn carrier="BrT Internet" mcc="724" mnc="16" apn="brt.br" user="brt" password="brt" mmsc="" type="default,supl" />
   <apn carrier="BrT MMS" mcc="724" mnc="16" apn="mms.brt.br" user="brt" password="brt" mmsc="http://mms.brasiltelecom.com.br/" mmsproxy="200.96.8.29" mmsport="8080" type="mms" />
-  <apn carrier="Telemig GPRS" mcc="724" mnc="19" apn="gprs.telemigcelular.com.br" user="celular" password="celular" mmsc="null" type="default,supl" />
+  <apn carrier="Telemig GPRS" mcc="724" mnc="19" apn="gprs.telemigcelular.com.br" user="celular" password="celular" mmsc="" type="default,supl" />
   <apn carrier="Telemig MMS" mcc="724" mnc="19" apn="mmsgprs.telemigcelular.com.br" user="celular" password="celular" mmsc="http://mms.telemigcelular.com.br" mmsproxy="200.192.230.142" mmsport="8080" type="mms" />
-  <apn carrier="Telemig GPRS" mcc="724" mnc="23" apn="gprs.telemigcelular.com.br" user="celular" password="celular" mmsc="null" type="default,supl" />
+  <apn carrier="Telemig GPRS" mcc="724" mnc="23" apn="gprs.telemigcelular.com.br" user="celular" password="celular" mmsc="" type="default,supl" />
   <apn carrier="Telemig MMS" mcc="724" mnc="23" apn="mmsgprs.telemigcelular.com.br" user="celular" password="celular" mmsc="http://mms.telemigcelular.com.br" mmsproxy="200.192.230.142" mmsport="8080" type="mms" />
-  <apn carrier="Amazonia GPRS" mcc="724" mnc="24" apn="gprs.amazoniacelular.com.br" user="celular" password="celular" mmsc="null" type="default,supl" />
+  <apn carrier="Amazonia GPRS" mcc="724" mnc="24" apn="gprs.amazoniacelular.com.br" user="celular" password="celular" mmsc="" type="default,supl" />
   <apn carrier="Amazonia MMS" mcc="724" mnc="24" apn="mmsgprs.amazoniacelular.com.br" user="celular" password="celular" mmsc="http://mms.amazoniacelular.com.br" mmsproxy="200.192.230.142" mmsport="8080" type="mms" />
-  <apn carrier="Oi" mcc="724" mnc="31" apn="gprs.oi.com.br" user="oi" password="oi" mmsc="null" type="default,supl" />
+  <apn carrier="Oi" mcc="724" mnc="31" apn="gprs.oi.com.br" user="oi" password="oi" mmsc="" type="default,supl" />
   <apn carrier="Oi MMS" mcc="724" mnc="31" apn="mmsgprs.oi.com.br" user="oimms" password="oioioi" mmsc="http://200.222.042.204:8002" mmsproxy="192.168.10.50" mmsport="3128" type="mms" />
   <apn carrier="CTBC MMS" mcc="724" mnc="32" apn="mms.ctbc.br" user="ctbc" password="1212" mmsc="http://mms.ctbccelular.com.br/was" mmsproxy="172.29.7.70" mmsport="8080" type="mms" />
   <apn carrier="CTBC MMS" mcc="724" mnc="33" apn="mms.ctbc.br" user="ctbc" password="1212" mmsc="http://mms.ctbccelular.com.br/was" mmsproxy="172.29.7.70" mmsport="8080" type="mms" />
